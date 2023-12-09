@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iphone calculator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: darkslategrey;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: black
+        }
+         .container {
+            height: 600px;
+            border-radius: 30px;
+            border: 4px solid white;
+         }
+         div input {
+          border-radius: 40px;
+          border: none;
+          padding: 15px;
+          height: 60px;
+          width: 60px;
+          text-align: center;
+          font-size: 30px;
+          margin: 3px;
+          position: relative;
+          top: 190px;
+          cursor: pointer;
+         }
+         .operator {
+          font-size: 25px;
+          font-weight: bold;
+          background: gray;
+         }
+        .operator-4 {
+          padding: 15px;
+          height: 60px;
+          width: 60px;
+          text-align: center;
+          font-size: 30px;
+          background: rgb(255, 159, 33);
+          color: white;
+        }
+        #nine-numbers {
+          color: white;
+          background: rgb(66, 63, 63);
+        }
+        .zero-1 {
+          margin-right: 16px; 
+          width: 120px;
+          height: 55px;
+          text-align: left;
+          background: rgb(66, 63, 63);
+          color: white;
+        }
+        .display input {
+          background: black;
+          color: white;
+          font-size: 40px;
+          height: 30px;
+          width: 245px;
+          text-align: right;
+          outline: none;
+          overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="calculator">
+        <form>
+            <div class="display">
+             <input type="text" name="display">
+
+    </div>
+    <div>
+      <input type="button" value="AC" onclick="display.value = '' " class="operator">
+      <input type="button" value="+/-" onclick="display.value = display.value.toString().slice(0,-1)" class="operator">
+      <input type="button" value="%" onclick="display.value += '%' " class="operator">
+      <input type="button" value="/" onclick="display.value += '/' " class="operator-4">
+    </div>
+    <div>
+      <input type="button" value="7" onclick="display.value += '7' " id="nine-numbers">
+      <input type="button" value="8" onclick="display.value += '8' " id="nine-numbers">
+      <input type="button" value="9" onclick="display.value += '9' " id="nine-numbers"> 
+      <input type="button" value="x" onclick="display.value += '*' " class="operator-4">
+    </div>
+
+    <div>
+      <input type="button" value="4" onclick="display.value += '4' " id="nine-numbers">
+      <input type="button" value="5" onclick="display.value += '5' " id="nine-numbers">
+      <input type="button" value="6" onclick="display.value += '6' " id="nine-numbers">
+      <input type="button" value="-" onclick="display.value += '-' " class="operator-4">
+    </div>
+    <di>
+      <input type="button" value="1" onclick="display.value += '1' " id="nine-numbers">
+      <input type="button" value="2" onclick="display.value += '2' " id="nine-numbers">
+      <input type="button" value="3" onclick="display.value += '3' " id="nine-numbers">
+      <input type="button" value="+" onclick="display.value += '+'  " class="operator-4">
+    </div>
+    <div>
+      <input type="button" value="0" onclick="display.value += '0' " class="zero-1">
+      <input type="button" value="." onclick="display.value += '.' " id="nine-numbers">
+      <input type="button" value="=" onclick="display.value = eval(display.value)" class="operator-4">
+    </div>
+    </form>
+    </div>
+</body>
+</html>   
