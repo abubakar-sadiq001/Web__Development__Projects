@@ -1,6 +1,7 @@
 :root {
     --bg: pink;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +9,17 @@
 html {
     scroll-behavior: smooth;
 }
+.backdrop {
+    height: 1000%;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.6);
+    backdrop-filter: blur(.20px);
+    position: absolute;
+    display: none;
+    transition: .30s;
+}
 body {
+    position: relative;
     background: var(--bg);
     width: 100%;
     height: 100vh;
@@ -115,7 +126,7 @@ nav .logo {
     width: 300px;
     /* background: #fff; */
     background: #333;
-    box-shadow: -2px 0px 20px rgb(113, 90, 94);
+    /* box-shadow: -2px 0px 20px rgb(113, 90, 94); */
     position: absolute;
     right: 0;
     z-index: 999;

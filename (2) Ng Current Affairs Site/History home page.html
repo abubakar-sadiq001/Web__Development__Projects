@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    
     <header>
+        <div onclick="DisplayBlockAndNone()" class="backdrop">
+
+        </div>
         <nav>
             <div class="logo">
                 <img class="logo-img" src="NGN flag.webp">
@@ -1136,14 +1140,28 @@
         let svg = document.querySelector('.open-svg');
         let svg2 = document.querySelector('.close-svg');
         let sidebar = document.querySelector('.side-bar');
+        let backdrop = document.querySelector('.backdrop');
         // SHOW SIDE BAR
         function ShowSidebar() {
-            sidebar.style.display = 'block'
+            sidebar.style.display = 'block';
+            DisplayBlockAndNone();
         }
         // CLOSE SIDE BAR
         function CloseSidebar() {
-            sidebar.style.display = 'none'
+            sidebar.style.display = 'none';
+            backdrop.style.display = 'none';
+
         }
+        function DisplayBlockAndNone() {
+            backdrop.style.display = 'block';
+            backdrop.addEventListener('click', () => {
+                sidebar.style.display = 'none';
+                backdrop.style.display = 'none';
+            })
+        }
+        // function closebar() {
+        //     backdrop.addEventListener('click');
+        // }
     </script>
 </body>
 </html>
