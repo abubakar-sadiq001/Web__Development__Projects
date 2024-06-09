@@ -24,7 +24,6 @@ header nav {
     background: #c2c2c2;
     /* background: rgb(74, 72, 75); */
     background: radial-gradient(hsl(0, 0%, 100%, 0.5), hsl(120, 100%, 25%, 0.1));
-    background-color: red;
     backdrop-filter: blur(20px);
     box-sizing: border-box;
     width: 100%;
