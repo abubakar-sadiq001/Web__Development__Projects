@@ -7,8 +7,7 @@
   font-optical-sizing: auto;
   --heading-text: "Young Serif", serif;
   font-weight: 400;
-  --body-bgc: pink;
-  --body-bgc: rgba(212, 189, 183, 0.559);
+  --body-bgc: hsl(30, 54%, 90%);
   --container-bg: #fff;
 
 }
