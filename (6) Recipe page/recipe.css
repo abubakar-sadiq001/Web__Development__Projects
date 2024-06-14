@@ -8,6 +8,7 @@
   --heading-text: "Young Serif", serif;
   font-weight: 400;
   --body-bgc: pink;
+  --body-bgc: rgba(212, 189, 183, 0.559);
   --container-bg: #fff;
 
 }
@@ -38,7 +39,8 @@ padding: 60px;
 .container h1 {
   font-family: var(--heading-text);
   padding: 15px 0px;
-  font-size: 29px;
+  font-size: 31px;
+  opacity: .7;
 }
 .container p {
   font-family: var(--text-fonts);
@@ -47,7 +49,7 @@ padding: 60px;
   color: #151515;
 }
 .preparation-sec {
-  background: rgb(255, 210, 217, 0.4);
+  background: rgb(255, 210, 217, 0.2);
   margin: 20px 0px;
   padding: 20px;
   border-radius: 10px;
@@ -71,11 +73,13 @@ padding: 60px;
   color: purple;
 }
 .preparation-sec ul li span {
-  font-weight: normal
+  font-weight: normal;
+  color: #302f2f;
 }
 .ingredients-sec h2 {
   font-family: var(--heading-text);
-  color: #ae5c14;
+  color: #d5955c;
+
 }
 .ingredients-sec ul {
   margin-left: 20px;
@@ -93,7 +97,8 @@ padding: 60px;
   padding: 25px 10px
 }
 .instruction-sec h2 {
-  color: #ae5c14;
+  color: #d5955c;
+  font-family: var(--heading-text);
 }
 .instruction-sec ol li {
   font-weight: 600;
@@ -113,7 +118,7 @@ padding: 60px;
   /* background-color: red; */
 }
 .nutrition-sec h2 {
-  color: #ae5c14;
+  color: #d5955c;
   font-family: var(--heading-text);
   padding: 20px  0px;
 }
