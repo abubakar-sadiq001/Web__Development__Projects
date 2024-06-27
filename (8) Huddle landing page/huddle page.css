@@ -167,12 +167,10 @@ main .container {
 .box3 {
     padding: 3rem;
     display: flex;
-    flex-direction: row-reverse;
     column-gap: 40px;
     align-items: center;
 }
 .box3 h2 {
-    /* color: rgb(5, 8, 20); */
     colro: hsl(194, 88%, 10%);
 
 }
